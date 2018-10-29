@@ -1,6 +1,6 @@
 {
     "compilerOptions": {
         "module": "es6",
-        "baseUrl": "."
+        "baseUrl": "./src"
     }
 }
