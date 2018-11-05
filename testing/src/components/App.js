@@ -8,11 +8,14 @@ import * as actions from 'actions';
 class App extends Component {
 
   renderButton() {
+
+    let buttonText;
     if (this.props.auth) {
-      return <button onClick={() => this.props.changeAuth(!this.props.auth)}>Sign Out</button>;
+      buttonText = "Sign Out";
     } else {
-      return <button onClick={() => this.props.changeAuth(!this.props.auth)}>Sign In</button>;
+      buttonText = "Sign In";
     }
+    return <button onClick={() => this.props.changeAuth(!this.props.auth)}>{buttonText}</button>;
   }
 
   renderHeader() {
